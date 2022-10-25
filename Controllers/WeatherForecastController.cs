@@ -20,7 +20,7 @@ namespace CashEX.API.Controllers
             this.context = context;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "GetWeatherForecast_")]
         public IEnumerable<WeatherForecast> Get()
         {
             return context.WeatherForecasts.ToList();
